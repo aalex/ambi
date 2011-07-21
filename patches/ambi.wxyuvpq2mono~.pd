@@ -3,7 +3,7 @@
 #X obj 600 128 init.post.dollarg;
 #X obj 599 106 dollarg;
 #X obj 613 55 loadbang;
-#X obj 553 175 convert.degree2radian;
+#X obj 553 175 ambi.convert.degree2radian;
 #X obj 159 326 cos;
 #X obj 607 84 t b b;
 #X obj 216 326 sin;

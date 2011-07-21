@@ -9,7 +9,7 @@
 #X obj 178 378 line~;
 #X obj 164 402 *~;
 #X obj 234 419 *~;
-#X obj 873 180 convert.degree2radian;
+#X obj 873 180 ambi.convert.degree2radian;
 #X obj 178 333 cos;
 #X obj 177 356 pack 0 15;
 #X obj 917 74 t b b;

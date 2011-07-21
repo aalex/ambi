@@ -11,7 +11,7 @@
 #X obj 108 314 *~;
 #X obj 226 318 *~;
 #X text 564 90 todo: wxyz version with elevation;
-#X obj 188 181 convert.degree2radian;
+#X obj 188 181 ambi.convert.degree2radian;
 #X text 471 30 XYZ is right-hand rule. (X: forward and Y:left);
 #X text 469 49 Angles run anticlockwise starting on the right.;
 #X obj 122 245 cos;
@@ -24,7 +24,7 @@
 #X obj 250 251 sin;
 #X obj 386 330 line~;
 #X obj 220 373 *~;
-#X obj 387 262 convert.degree2radian;
+#X obj 387 262 ambi.convert.degree2radian;
 #X obj 386 285 cos;
 #X obj 385 308 pack 0 15;
 #X obj 111 373 *~;

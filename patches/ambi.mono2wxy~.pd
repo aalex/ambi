@@ -11,7 +11,7 @@
 #X obj 185 230 *~;
 #X text 321 130 todo: dominance;
 #X text 315 163 todo: wxyz version with elevation;
-#X obj 184 119 convert.degree2radian;
+#X obj 184 119 ambi.convert.degree2radian;
 #X text 296 246 Encodes a mono sound to first order Ambisonics horizontal
 B-Format.;
 #X text 471 30 XYZ is right-hand rule. (X: forward and Y:left);

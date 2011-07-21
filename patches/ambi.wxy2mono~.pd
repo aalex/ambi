@@ -10,7 +10,7 @@
 #X obj 319 169 pack 0 50;
 #X obj 171 256 *~;
 #X text 296 278 todo: wxyz version with elevation;
-#X obj 323 119 convert.degree2radian;
+#X obj 323 119 ambi.convert.degree2radian;
 #X text 296 246 Decodes a first order Ambisonics horizontal B-Format
 to a mono output channel.;
 #X obj 321 146 cos;

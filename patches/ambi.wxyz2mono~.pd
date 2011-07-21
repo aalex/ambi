@@ -9,7 +9,7 @@
 #X obj 102 253 *~;
 #X obj 320 191 line~;
 #X obj 171 256 *~;
-#X obj 323 119 convert.degree2radian;
+#X obj 323 119 ambi.convert.degree2radian;
 #X text 69 433 Decodes a first order Ambisonics horizontal B-Format
 to a mono output channel.;
 #X obj 321 146 cos;
@@ -17,7 +17,7 @@ to a mono output channel.;
 #X obj 393 144 sin;
 #X obj 253 53 inlet~ z;
 #X obj 274 332 *~;
-#X obj 519 135 convert.degree2radian;
+#X obj 519 135 ambi.convert.degree2radian;
 #X obj 520 203 line~;
 #X text 547 158 ??????;
 #X obj 385 2 loadbang;
