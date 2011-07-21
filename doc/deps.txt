@@ -1,0 +1,17 @@
+Dependencies
+============
+
+PdMtl Abstractions
+------------------
+
+flow.prepend
+list.build prepend
+list.trim
+init.lf
+init.post.dollarg
+flow.any
+
+Externals
+---------
+
+soundfile_info
