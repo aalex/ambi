@@ -72,7 +72,7 @@
 #X obj 31 302 unpack f s f f f f s;
 #X obj 26 489 outlet duration_ms;
 #X text 132 49 NOTE: we could also use the wavinfo object.;
-#X obj 37 434 convert.smp2ms;
+#X obj 37 434 ambi.convert.smp2ms;
 #X obj 180 482 outlet other_info;
 #X msg 175 420 samplerate \$1;
 #X msg 263 423 file_name \$1;

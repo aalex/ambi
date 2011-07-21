@@ -1,7 +1,7 @@
 #N canvas 10 94 1267 810 10;
 #X obj 160 413 soundfiler;
 #X floatatom 167 436 12 0 0 0 - - -;
-#X obj 160 464 convert.smp2ms;
+#X obj 160 464 ambi.convert.smp2ms;
 #X floatatom 185 486 12 0 0 0 - - -;
 #X obj 643 127 openpanel;
 #X obj 169 558 outlet;
