@@ -1,4 +1,4 @@
-#N canvas 2 49 597 304 10;
+#N canvas 6 97 808 306 10;
 #X obj 84 238 outlet~;
 #X obj 159 237 outlet~;
 #X obj 259 231 outlet~;
@@ -15,6 +15,7 @@
 #X obj 254 173 ambi.wxy2mono~;
 #X obj 67 173 ambi.wxy2mono~;
 #X obj 158 175 ambi.wxy2mono~;
+#X text 628 79 <-- FIXME: should be 315 45 225 135;
 #X connect 4 0 12 0;
 #X connect 4 0 13 0;
 #X connect 4 0 14 0;

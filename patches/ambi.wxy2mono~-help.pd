@@ -1,26 +1,40 @@
-#N canvas 619 232 499 354 10;
+#N canvas 621 256 499 354 10;
 #X obj -10 150 noise~;
-#X msg 164 162 angle \$1;
-#X floatatom 164 142 5 0 0 0 - - -;
-#X obj 167 121 hsl 120 15 0 360 0 0 empty empty empty -2 -8 0 10 -260097
+#X msg 213 191 angle \$1;
+#X floatatom 213 171 5 0 0 0 - - -;
+#X obj 216 150 hsl 120 15 0 360 0 0 empty empty empty -2 -8 0 10 -260097
 -1 -1 0 1;
-#X obj -12 198 ambi.mono2wxy~ @angle 0;
-#X text 159 100 Angle is in degrees.;
-#X obj -16 251 ambi.wxy2mono~ @angle 90;
-#X obj 143 253 ambi.wxy2mono~ @angle 270;
+#X text 69 110 Angle is in degrees.;
 #X text 7 44 Decodes first order Ambisonics horizontal B-Format sounds
 according to each speaker output in order to send it to an audio output.
 ;
 #X obj -16 289 dac~ 1 2;
-#X connect 0 0 4 0;
-#X connect 1 0 7 3;
+#X obj -18 251 ambi.wxy2mono~;
+#X obj 144 253 ambi.wxy2mono~;
+#X msg 306 221 angle 30;
+#X msg 316 247 angle 270;
+#X obj 309 174 loadbang;
+#X obj -12 198 ambi.mono2wxy~;
+#X msg 68 169 angle \$1;
+#X floatatom 68 149 5 0 0 0 - - -;
+#X obj 71 128 hsl 120 15 0 360 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 0 1;
+#X connect 0 0 12 0;
+#X connect 1 0 8 3;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
-#X connect 4 0 6 0;
-#X connect 4 0 7 0;
-#X connect 4 1 6 1;
-#X connect 4 1 7 1;
-#X connect 4 2 6 2;
-#X connect 4 2 7 2;
-#X connect 6 0 9 0;
-#X connect 7 0 9 1;
+#X connect 7 0 6 0;
+#X connect 8 0 6 1;
+#X connect 9 0 7 3;
+#X connect 10 0 8 3;
+#X connect 11 0 9 0;
+#X connect 11 0 10 0;
+#X connect 12 0 7 0;
+#X connect 12 0 8 0;
+#X connect 12 1 7 1;
+#X connect 12 1 8 1;
+#X connect 12 2 7 2;
+#X connect 12 2 8 2;
+#X connect 13 0 12 1;
+#X connect 14 0 13 0;
+#X connect 15 0 14 0;
